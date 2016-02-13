@@ -10,6 +10,7 @@ composer.lock
 .env.local.php
 .env.php
 .env.*.php
+.env
 .DS_Store
 Thumbs.db
 .env.testing.php
