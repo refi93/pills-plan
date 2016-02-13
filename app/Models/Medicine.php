@@ -2,7 +2,7 @@
 
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
- 
+
 class Medicine extends Model
 {
 	protected $table = 'medicines';
@@ -10,4 +10,9 @@ class Medicine extends Model
 		'name',
 		'pills_count',
 	];
+
+	public function activeSubstances()
+	{
+		return $this->belongsToMany('ActiveSubstance');
+	}
 }
